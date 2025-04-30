@@ -1,1 +1,0 @@
-export const generateResponse = async (requestAnimationFrame,res)
