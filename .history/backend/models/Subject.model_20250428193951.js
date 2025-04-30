@@ -1,0 +1,21 @@
+import express from 'express';
+import mongoose, { Schema } from 'mongoose';
+
+const SubjectSchema = new Schema({
+    name:{
+        
+        type: String,
+        required: true
+    },
+    chapters:[
+        {
+            type: String,
+            required: true,
+            topic:{
+                
+                type: String,
+                required: true
+            }
+        }
+    ],
+})
